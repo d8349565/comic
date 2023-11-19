@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>{{ name }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}"/>
+    </noscript>
+</head>
+
+<body class="is-preload">
+<div id="wrapper">
+    <header id="header">
+        <div class="inner">
+            <a href="/" class="logo">
+                <span class="symbol"><h1>{{ name }}</h1></span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="/">主页</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <div class="inner">
+            <a href="/" style="font-size: 40px;">{{ comic_name }}</a><br>
+            <a href="#bottom">跳转页尾</a><br>
+            <a href="/comic/{{ comic_name }}/{{ content[comic_name]|last }}">最新一话：{{ content[comic_name]|last }}</a><br>
+
+            <a href="/comic/{{ comic_name }}/{{ history }}" style="color: red;">上次阅读：{{ history }}</a>
+            <br>
+            <br>
+            {% for x in content[comic_name] %}
+                <a href="/comic/{{ comic_name }}/{{ x }}">{{ x }}</a><br>
+            {% endfor %}
+            <br>
+            <br>
+            <div>
+                <a class="back-to-top" href="#top">
+                    <button>返回顶部</button>
+                </a>
+            </div>
+            <script>
+                var backBtn = $('.back-to-top');
+                backBtn.on('click', function () {
+                    $('body,window').animate(
+                        {
+                            scrollTop: 0
+                        }, 300
+                    )
+
+                })
+                $(window).on('scroll', function () {
+                    if ($(window).scrollTop() > $(window).height()) {
+                        backBtn.fadeIn();
+                    } else {
+                        backBtn.fadeOut();
+                    }
+                })
+            </script>
+        </div>
+
+    </div>
+    <div id="bottom"></div>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/util.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>漫画阅</title>
+	<style>
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			width: auto;
+			width: auto;
+		}
+	</style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	<noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<!-- Header -->
+
+
+	<header id="header">
+		<div class="inner">
+
+			<!-- Logo -->
+			<a href="/comic/{{comic_name}}" class="logo">
+				<span class="symbol">
+					<h1>{{title}}</h1>
+				</span>
+			</a>
+
+			<!-- Nav -->
+			<nav>
+				<ul>
+					<li><a href="#menu">Menu</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<nav id="menu">
+		<h2>Menu</h2>
+		<ul>
+			<li><a href="/">主页</a></li>
+			<li><a href="/comic/{{comic_name}}">返回目录</a></li>
+
+		</ul>
+	</nav>
+	<div class="container" id="wrapper">
+		{% for url in urls %}
+		<!-- <img src="{{url}}" alt=""> -->
+		<img src="{{ url_for('static', filename='images/1.gif') }}" data-src="{{url}}?referer=https://cn.baozimh.com/">
+		{% endfor %}
+	</div>
+	<br>
+	<br>
+	<div><a href="/comic/{{comic_name}}/{{next_title}}"><button>{{next_title}}</button></a>
+		<a class="back-to-top" href="#top"><button>返回顶部</button></a>
+	</div>
+	<script>
+		var backBtn = $('.back-to-top');
+		backBtn.on('click', function () {
+			$('body,window').animate(
+				{
+					scrollTop: 0
+				}, 300
+			)
+
+		})
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() > $(window).height()) {
+				backBtn.fadeIn();
+			} else {
+				backBtn.fadeOut();
+			}
+		})
+	</script>
+	<br>
+	<!-- Scripts -->
+	<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+<script>
+	//获取全部img标签
+	var images = document.getElementsByTagName("img");
+
+	window.addEventListener("scroll", (e) => {
+		//当发生滚动事件时调用ergodic事件
+		ergodic();
+	});
+	function ergodic() {
+		// 遍历每一张图
+		for (let i of images) {
+			//判断当前图片是否在可视区内
+			if (i.offsetTop - 1500 <= window.innerHeight + window.scrollY) {
+				//获取自定义data-src属性的值
+				let trueSrc = i.getAttribute("data-src");
+				//把值赋值给图片的src属性
+				i.setAttribute("src", trueSrc);
+			}
+		}
+	}
+	//没发生滚动事件时也要先执行一次
+	ergodic();
+
+</script>
+
+</html>
