@@ -110,3 +110,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
 
 # pyinstaller --onefile --add-data "static;static" --add-data "templates;templates" --add-data "comic.db;comic.db" app.py
+# 生成requirements.txt -> pip freeze > requirements.txt
