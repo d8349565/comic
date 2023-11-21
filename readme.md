@@ -1,10 +1,12 @@
 # Web Comic 一键搭建自己的漫画flask服务器，在线阅读
 
-使用Python-flask搭建的小型漫画服务器，可在Windows电脑直接使用，亦可自己搭建linux服务器部署。
+使用Python-flask搭建的小型漫画服务器，可在Windows电脑直接运行，亦可自己搭建linux服务器部署。
 
 ## 关于项目
 
-项目主要是把采集到的漫画数据通过flask在前端界面展示，仅用于交流学习，勿做他用。
+项目主要是把采集到的漫画数据通过flask在前端界面展示，可在电脑、平板、手机等各类设备上阅读漫画。
+
+仅用于交流学习，勿做他用。
 
 ![1700580999369.png](http://ldzfy.cn/i/2023/11/21/655cce70103ca.png)
 
@@ -34,3 +36,9 @@ python app.py
 ```
 
 3、漫画数据需要自行爬取，欢迎大家交流自己的爬取方式。
+
+#### 地址
+
+项目：https://github.com/d8349565/comic
+
+蓝奏云下载：https://leezfy.lanzouq.com/ismlu1fkcdkh 密码:6wck
