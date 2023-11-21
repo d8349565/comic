@@ -69,7 +69,10 @@ def comic_index(comic_name):
     res = session_c.execute(text(sql))
     data = res.fetchall()
     content = {comic_name: [i[0] for i in data]}
-    history = session_c.query(user_history).filter(user_history.comic_name == comic_name, user_history.name == session['username']).all()[-1].title
+    try:
+        history = session_c.query(user_history).filter(user_history.comic_name == comic_name, user_history.name == session['username']).all()[-1].title
+    except:
+        history =None
     session_c.close()
     return render_template('comic.html', content=content, history=history, comic_name=comic_name)
 
@@ -107,7 +110,8 @@ def comic_detail(comic_name, title):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
 
 # pyinstaller --onefile --add-data "static;static" --add-data "templates;templates" --add-data "comic.db;comic.db" app.py
+# pyinstaller --onefile --add-data "static;static" --add-data "templates;templates" app.py
 # 生成requirements.txt -> pip freeze > requirements.txt
