@@ -37,8 +37,8 @@ python app.py
 
 3、漫画数据需要自行爬取，欢迎大家交流自己的爬取方式。
 
-#### 地址
+### 其他
 
-项目：https://github.com/d8349565/comic
+项目地址：https://github.com/d8349565/comic
 
 蓝奏云下载：https://leezfy.lanzouq.com/ismlu1fkcdkh 密码:6wck
