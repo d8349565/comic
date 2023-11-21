@@ -31,7 +31,7 @@
 2、python项目内运行，先安装第三方库
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 python app.py
 ```
 
