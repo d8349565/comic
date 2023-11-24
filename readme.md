@@ -18,7 +18,7 @@
 
 登入密码：adminadmin
 
-![预览.gif](http://ldzfy.cn/i/2023/11/24/656093faf09e7.gif)
+![预览.gif](https://attach.52pojie.cn/forum/202311/24/203800xq1b2b7xntebltqm.gif)
 
 ### 使用方法
 
