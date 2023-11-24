@@ -7,23 +7,6 @@ from datetime import datetime
 engine = create_engine('sqlite:///comic.db')
 Base = declarative_base()
 
-
-# class Comic(Base):
-#     __tablename__ = 'comic'  # 表名
-#     id = Column(Integer, primary_key=True, autoincrement=True)
-#     name = Column(String(50))
-#     url = Column(String(150), unique=True)
-#     cover_url = Column(String(150), unique=True)
-#
-#
-# class Chapter(Base):
-#     __tablename__ = 'chapter'  # 表名
-#     id = Column(Integer, primary_key=True, autoincrement=True)
-#     name = Column(String(50))
-#     url = Column(String(150), unique=True)
-#     Comic_name = Column(String(150))
-
-
 class Pic(Base):
     __tablename__ = 'pic'  # 表名
     id = Column(Integer, primary_key=True, autoincrement=True)
