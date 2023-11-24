@@ -18,7 +18,7 @@
 
 登入密码：adminadmin
 
-![预览.gif](https://github.com/d8349565/comic/blob/master/%E5%9B%BE%E7%89%87/%E9%A2%84%E8%A7%88.gif?raw=true)
+![](https://image-1302753170.cos.ap-nanjing.myqcloud.com/md_img%E9%A2%84%E8%A7%88.gif)
 
 ### 使用方法
 
@@ -38,3 +38,4 @@ python app.py
 项目地址：https://github.com/d8349565/comic
 
 蓝奏云下载：https://leezfy.lanzouq.com/ismlu1fkcdkh 密码:6wck
+
