@@ -18,7 +18,7 @@
 
 登入密码：adminadmin
 
-![111.gif](http://ldzfy.cn/i/2023/11/24/6560893d5343f.gif?Access-Control-Allow-Origin:%20*)
+![预览.gif](http://ldzfy.cn/i/2023/11/24/656093faf09e7.gif)
 
 ### 使用方法
 
