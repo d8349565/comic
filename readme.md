@@ -18,7 +18,7 @@
 
 登入密码：adminadmin
 
-![预览.gif](https://attach.52pojie.cn/forum/202311/24/203800xq1b2b7xntebltqm.gif)
+![预览.gif](https://github.com/d8349565/comic/blob/master/%E5%9B%BE%E7%89%87/%E9%A2%84%E8%A7%88.gif?raw=true)
 
 ### 使用方法
 
