@@ -10,7 +10,7 @@
 
 ![1700582745700.png](http://ldzfy.cn/i/2023/11/22/655cd543adda9.png)
 
-![1700580999369.png](http://ldzfy.cn/i/2023/11/21/655cce70103ca.png)
+
 
 ## 界面预览
 
@@ -18,13 +18,7 @@
 
 登入密码：adminadmin
 
-![1700580637834.png](http://ldzfy.cn/i/2023/11/21/655ccd06b9516.png)
-
-![1700580408869.png](http://ldzfy.cn/i/2023/11/21/655ccc221aaf1.png)
-
-
-
-![1700580528471.png](http://ldzfy.cn/i/2023/11/21/655ccc9a50275.png)
+![111.gif](http://ldzfy.cn/i/2023/11/24/6560893d5343f.gif?Access-Control-Allow-Origin:%20*)
 
 ### 使用方法
 
