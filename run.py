@@ -1,7 +1,7 @@
 # gunicorn -c run.py app:app
 # pstree -ap | grep gunicorn
 import os
-bind = '0.0.0.0:8812'      #绑定ip和端口号
+bind = '0.0.0.0:5000'      #绑定ip和端口号
 backlog = 512                #监听队列
 timeout = 30      #超时
 chdir = os.path.abspath(os.path.dirname(__file__)) #gunicorn要切换到的目的工作目录
