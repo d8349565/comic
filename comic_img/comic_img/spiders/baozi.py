@@ -48,7 +48,7 @@ class BaoziSpider(scrapy.Spider):
             request = scrapy.Request(url=url, callback=self.parse_detail, headers=self.headers,
                                      meta={'name': name, 'cover': cover, 'title': title, 'url': url})
             yield request
-            break
+            # break
 
     def parse_detail(self, response):
         node_list = response.xpath('//*[@id="layout"]/div/div[2]/ul/div')

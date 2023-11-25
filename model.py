@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, Column, Integer, String, DATETIME
 from sqlalchemy.orm import sessionmaker, declarative_base
 from datetime import datetime
 
-# 创建一个SQLite数据库引擎，指定数据库文件名为comic.db
+
 engine = create_engine('sqlite:///comic.db')
 Base = declarative_base()
 
