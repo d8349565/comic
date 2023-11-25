@@ -10,7 +10,7 @@
 
 ![1700582745700.png](http://ldzfy.cn/i/2023/11/22/655cd543adda9.png)
 
-![1700580999369.png](http://ldzfy.cn/i/2023/11/21/655cce70103ca.png)
+
 
 ## 界面预览
 
@@ -18,13 +18,7 @@
 
 登入密码：adminadmin
 
-![1700580637834.png](http://ldzfy.cn/i/2023/11/21/655ccd06b9516.png)
-
-![1700580408869.png](http://ldzfy.cn/i/2023/11/21/655ccc221aaf1.png)
-
-
-
-![1700580528471.png](http://ldzfy.cn/i/2023/11/21/655ccc9a50275.png)
+![](https://image-1302753170.cos.ap-nanjing.myqcloud.com/md_img%E9%A2%84%E8%A7%88.gif)
 
 ### 使用方法
 
@@ -44,3 +38,4 @@ python app.py
 项目地址：https://github.com/d8349565/comic
 
 蓝奏云下载：https://leezfy.lanzouq.com/ismlu1fkcdkh 密码:6wck
+
